@@ -15,6 +15,8 @@
     (os? "mac")		:macos
     (os? "linux")	:linux
     (os? "windows")	:windows
+    ;;pretend IBMi OS/400 is just plain old linux.
+    (os? "os/400") :linux
     true		nil))
 
 (defn supported-os?
